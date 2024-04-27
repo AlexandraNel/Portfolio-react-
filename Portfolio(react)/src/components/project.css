@@ -1,0 +1,14 @@
+.project {
+    background-color: #000; 
+    margin: 5%;
+  }
+
+  img {
+    border-color: #3785B5;
+    border: 10px;
+  }
+
+  h2 {
+    color: #EBFC72;
+    font-family: "Swear-Display", "Gopher", "Thrillers", "Roc Grotesk", "Activ Grotesk" 
+  }
