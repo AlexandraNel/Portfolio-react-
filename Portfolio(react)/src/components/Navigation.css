@@ -1,0 +1,26 @@
+.nav {
+  background-color: #F4F3E8;  
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: 00000;
+    text-align: center;
+    }
+    
+li a:hover {
+    background-color:#E2D8C2;
+}
+
+li a:active {
+   font-weight: bold;
+   background-color:#EBFC72 ;
+}
