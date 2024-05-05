@@ -1,10 +1,11 @@
+/* Base styles */
 :root {
   font-family: 'Outfit', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: #ffffff; /* Ensures text color is white */
   background-color: #242424;
 
   font-synthesis: none;
@@ -14,28 +15,39 @@
   -webkit-text-size-adjust: 100%;
 }
 
+Anchor link styles
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  color: #e2d8c2; /* Ensures text color is cream */
+  height: 100%;
+  text-align: center;
+  padding: 10px; /* padding sides */
+  text-decoration: none; /* Removes underline from links */
 }
 
+a:hover {
+  color: #ebfc72;
+}
+
+/* Body styles - setting up the entire viewport */
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  /* display: flex; */
+  flex-direction: column; /* Correcting direction to support full page content layout */
+  align-items: center; /* Centering content horizontally */
+  justify-content: center; /* Aligning content to start from the top */
+  min-width: 320px; 
+  min-height: 100px; 
+  padding: 2rem;
+  text-align: center;
 }
 
+/* Header styles */
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
 
+/* Button styles */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -47,23 +59,26 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
-  border-color: #646cff;
+  color: #ebfc72;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* Media query for light color scheme */
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #000000;
+    background-color: #e2d8c2;
   }
   a:hover {
-    color: #747bff;
+    color: #ebfc72;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #3785B5;
   }
 }

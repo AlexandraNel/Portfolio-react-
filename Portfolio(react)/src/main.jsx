@@ -5,8 +5,6 @@ import App from './App.jsx'
 import ErrorPage from './pages/error.jsx' 
 import HomePage from './pages/homepage.jsx'
 import AboutPage from './pages/about.jsx'
-
-
 import './index.css'
 
 //creating teh react router for all pages

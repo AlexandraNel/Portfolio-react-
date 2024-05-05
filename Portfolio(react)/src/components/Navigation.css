@@ -1,26 +1,57 @@
 .nav {
-  background-color: #F4F3E8;  
+  background-color: #000000;
+  display: flex; /* Using flexbox */
+  justify-content: space-between; /* Spreads out items to both ends */
+  align-items: center; /* Vertically centers the items */
+  font-size: large;
+  font-weight: 700;
+}
+
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: large;
+    font-weight: 700;    
+
 }
 
 ul {
-    list-style-type: none;
+  display: flex; /* Enables flexbox for the list */
+  align-items: center; /* Aligns items vertically */
+  list-style-type: none;
+  padding: 0 10px; /* padding sides */
+  margin: 0;
+  width: 100%; /* Ensures it spans the full width of its parent */
+  height: 100%;
 }
 
 li {
-    float: right;
+  padding: 10px; /* padding sides */
 }
 
-li a {
-    display: block;
-    color: 00000;
-    text-align: center;
-    }
-    
-li a:hover {
-    background-color:#E2D8C2;
+a {
+    color: #e2d8c2; /* Ensures text color is cream */
+    height: 100%;
+  text-align: center;
+  padding: 10px; /* padding sides */
+  text-decoration: none; /* Removes underline from links */
 }
 
-li a:active {
-   font-weight: bold;
-   background-color:#EBFC72 ;
+a:hover {
+  color: #ebfc72;
+}
+
+.active {
+  /* This targets the active class added by NavLink */
+  font-weight: bold;
+  background-color: #ebfc72;
+}
+
+/* Additional CSS to ensure the logo is on the left and other items on the right */
+.nav > ul > li:first-child {
+  margin-right: auto; /* Pushes all other items to the right */
+}
+
+li:first-child a:hover {
+  filter: invert();
 }
