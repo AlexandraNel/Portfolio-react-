@@ -1,12 +1,12 @@
 
 import '../index.css'
 import {Container, Image} from 'react-bootstrap'
-import headshot from '../../public/Headshotsquare'
+
 
 export default function About() {
   return (
     <Container className='fluid' id="about">
-<Image className='headshot m-5' src= {headshot} roundedCircle fluid/>
+<Image className='headshot m-5' src="/Headshotsquare.jpg" roundedCircle fluid/>
       <h1 className='m-3'>About Alexa</h1>
       <p className="font-weight-bold ">
         I&apos;m a 2D Motion Graphics Designer with a knack for breathing life into ideas. <br />
