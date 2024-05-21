@@ -5,40 +5,34 @@ import "./Navigation.css";
 export default function Navigation({ logo }) {
   return (
     <nav className="nav">
-      <ul>
-        <li>
-          <NavLink
-            to="/"
-            className={({ isActive }) => (isActive ? "active" : "nav-link")}
-          >
-            {logo}
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/Portfolio"
-            className={({ isActive }) => (isActive ? "active" : "nav-link")}
-          >
-            Portfolio
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/Resume"
-            className={({ isActive }) => (isActive ? "active" : "nav-link")}
-          >
-            Resume
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/Contact"
-            className={({ isActive }) => (isActive ? "active" : "nav-link")}
-          >
-            Contact
-          </NavLink>
-        </li>
-      </ul>
+      <div className="logo">
+        {logo}
+      </div>
+      
+      <NavLink
+        to="/"
+        className={({ isActive }) => (isActive ? "active" : "nav-link")}
+      >
+        About
+      </NavLink>
+      <NavLink
+        to="/portfolio"
+        className={({ isActive }) => (isActive ? "active" : "nav-link")}
+      >
+        Portfolio
+      </NavLink>
+      <NavLink
+        to="/resume"
+        className={({ isActive }) => (isActive ? "active" : "nav-link")}
+      >
+        Resume
+      </NavLink>
+      <NavLink
+        to="/contact"
+        className={({ isActive }) => (isActive ? "active" : "nav-link")}
+      >
+        Contact
+      </NavLink>
     </nav>
   );
 }
@@ -46,4 +40,3 @@ export default function Navigation({ logo }) {
 Navigation.propTypes = {
   logo: PropTypes.element.isRequired, // Ensures the logo is always a React element
 };
-

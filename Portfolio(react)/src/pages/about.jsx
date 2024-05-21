@@ -5,7 +5,7 @@ import {Container, Image} from 'react-bootstrap'
 export default function About() {
   return (
     <Container className='fluid' id="about">
-<Image src='/public/Headshotsquare.jpg' roundedCircle fluid className='m-5 border'/>
+<Image className='headshot m-5' src='/public/Headshotsquare.jpg' roundedCircle fluid/>
       <h1 className='m-3'>About Alexa</h1>
       <p className="font-weight-bold ">
         I&apos;m a 2D Motion Graphics Designer with a knack for breathing life into ideas. <br />

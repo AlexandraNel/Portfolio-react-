@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client' // virtual DOM
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.jsx'
 import ErrorPage from './pages/error.jsx' 
-import HomePage from './pages/homepage.jsx'
-import AboutPage from './components/about.jsx'
+import AboutPage from './pages/about.jsx'
 import ResumePage from './pages/resume.jsx'
 import PortfolioPage from './pages/portfolio.jsx'
+import ContactPage from './pages/contact.jsx'
 import './index.css'
 
 //creating teh react router for all pages
@@ -17,7 +17,7 @@ const router = createBrowserRouter([{
   children: [{
     // index = homepage this means the landing ie. directional page
     index:true, 
-    element: <HomePage/>},
+    element: <AboutPage/>},
     //These are now our children with paths to them ie. this is our router
     {
       path: 'about',
@@ -31,6 +31,10 @@ const router = createBrowserRouter([{
     {
       path: 'portfolio',
       element: <PortfolioPage />
+    },
+    {
+      path: 'contact',
+      element: <ContactPage />
     },
   ]
 

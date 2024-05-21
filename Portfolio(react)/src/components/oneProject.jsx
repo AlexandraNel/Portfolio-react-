@@ -1,25 +1,39 @@
 import PropTypes from "prop-types";
+import { Container, Image, Row, Col } from "react-bootstrap";
 // import './project.css';
 
-function Project({ img, title, link}) {
+function Project({ img, title, link, repo }) {
   return (
-    <>
-      <div className="mt-5">
-        <h2>{title}</h2>
-        <a href={link}>
-          <h4>Link to Repository</h4>
-        </a>
-      </div>
-      <div>
-        {" "}
-        <img
-          className="img-fluid"
-          style={{ maxWidth: "50%" }}
-          src={img}
-          alt={title}
-        />{" "}
-      </div>
-    </>
+    <Container className='mb-5' >
+      <Row className="mt-5">
+        <Col>
+          <h2 style={{ marginBottom: '0.0em' }}>{title}</h2>
+
+          {/* if link exists */}
+          {link && (
+            <a href={link}>
+              <h6 style={{ marginBottom: '0.0em' }}>Link to Deployed App</h6>
+            </a>
+          )}
+          <a href={repo}>
+            <h6 style={{ marginBottom: '0.0em' }}>Link to Repository</h6>
+          </a>
+        </Col>
+      </Row>
+
+      <Row>
+        <Col>
+          <Image
+            rounded
+            fluid
+            className="img-fluid"
+            style={{ maxWidth: "75%" }}
+            src={img}
+            alt={title}
+          />
+        </Col>
+      </Row>
+    </Container>
   );
 }
 //es lint error proptypes not defined- imported proptypes and defined strings required

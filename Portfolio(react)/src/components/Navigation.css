@@ -1,17 +1,36 @@
 .nav {
   background-color: #000000;
   display: flex; /* Using flexbox */
-  justify-content: space-between; /* Spreads out items to both ends */
+  justify-content: space-between; /* Align items to the start */
   align-items: center; /* Vertically centers the items */
   font-size: large;
   font-weight: 700;
+  padding: 10px; /* Add padding around the navbar */
 }
+
+.nav-link {
+  margin-right: 30px; /* Add space between each link */
+  color: #ffffff; /* Set the text color for links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.nav-link:last-child {
+  margin-right: 50px; /* Add extra space to the last link */
+}
+
+.nav-link.active {
+  color: #d8ff00; /* Color for the active link */
+}
+
 
 .footer {
     background-color: #000000;
     color: #ffffff;
     font-size: large;
-    font-weight: 700;    
+    font-weight: 700;  
+    align-items: center; 
+    justify-content: center; 
+    
 
 }
 
