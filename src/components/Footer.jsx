@@ -4,18 +4,19 @@ import { Container, Row, Col,} from "react-bootstrap";
 
 export default function Footer({ logo, contact, git, linkedIn, instagram }) {
   return (
-  
-      <Container>
-        <Row className="footer ">
+  <>
+   
+   <Container fluid className="footer">
+    <Row className="footer">
       <Col className="footerLogo">{logo}</Col>
       <Col className="footerGit">{git}</Col>
       <Col className="footerGit">{instagram}</Col>
       <Col className="footerGit">{contact}</Col>
       <Col className="footerGit">{linkedIn}</Col>
-     
       </Row>
       </Container>
-   
+     
+      </>
   );
 }
 
