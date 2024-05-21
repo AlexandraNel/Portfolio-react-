@@ -1,6 +1,12 @@
 import Project from "../components/oneProject";
 import { Container, Row, Col } from "react-bootstrap";
 import "../index.css";
+import IRL from '../../public/IRL'
+import techtalks from '../../public/video'
+import JATE from '../../public/JATE'
+import logoBuilder from '../../public/02mylogo.svg'
+import cossyLivs from '../../public/hero.jpg'
+import cmdReadMe from '../../public/commandlineradme.JPG'
 
 function Portfolio() {
   return (
@@ -9,7 +15,7 @@ function Portfolio() {
       <Row className='OutlineYELLOW'>
         <Col>
           <Project
-            img="/public/IRL.JPG"
+            img={IRL}
             title="IRL"
             link="https://powerful-shelf-37778-84a56d43e15f.herokuapp.com/"
             repo="https://github.com/AlexandraNel/IRL.git"
@@ -17,7 +23,7 @@ function Portfolio() {
         </Col>
         <Col>
           <Project
-            img="/public/video.gif"
+            img={techtalks}
             title="Tech Talks"
             link="https://techtalks-87552bfebf03.herokuapp.com/"
             repo="https://github.com/AlexandraNel/TechTalks"
@@ -28,7 +34,7 @@ function Portfolio() {
       <Row >
         <Col>
           <Project
-            img="/public/JATE.png"
+            img={JATE}
             title="JATE: Just Another Text Editor"
             link="https://just-another-text-editor-k8km.onrender.com/"
             repo="https://github.com/AlexandraNel/Just-Another-Text-Editor.git"
@@ -36,7 +42,7 @@ function Portfolio() {
         </Col>
         <Col>
           <Project
-            img="/public/02mylogo.svg"
+            img={logoBuilder}
             title="Simple Commandline Logo Generator"
             repo="https://github.com/AlexandraNel/LogoGenerator.git"
           />
@@ -46,14 +52,14 @@ function Portfolio() {
       <Row className='OutlineYELLOW'>
         <Col>
           <Project
-            img="/public/hero.jpg"
+            img={cossyLivs}
             title="Cossy Livs Budget tracker"
             repo="https://github.com/AlexandraNel/cossylivs-budget-tracker.git"
           />
         </Col>
         <Col>
           <Project
-            img="/public/commandlineradme.JPG"
+            img={cmdReadMe}
             title="Command Line ReadMe Generator"
             repo="https://github.com/AlexandraNel/CommandLineReadMe.git"
           />
