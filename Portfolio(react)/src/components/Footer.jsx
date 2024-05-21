@@ -24,4 +24,5 @@ Footer.propTypes = {
   logo: PropTypes.oneOfType([PropTypes.element]).isRequired,
   git: PropTypes.oneOfType([PropTypes.element]).isRequired,
   linkedIn: PropTypes.oneOfType([PropTypes.element]).isRequired,
+ instagram: PropTypes.oneOfType([PropTypes.element]).isRequired,
 };
