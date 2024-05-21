@@ -8,7 +8,7 @@ export default function Navigation({ logo }) {
       <ul>
         <li>
           <NavLink
-            to="/Home"
+            to="/"
             className={({ isActive }) => (isActive ? "active" : "nav-link")}
           >
             {logo}
@@ -46,3 +46,4 @@ export default function Navigation({ logo }) {
 Navigation.propTypes = {
   logo: PropTypes.element.isRequired, // Ensures the logo is always a React element
 };
+

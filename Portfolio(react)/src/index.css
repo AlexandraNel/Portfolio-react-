@@ -64,6 +64,10 @@ button:hover {
   color: #ebfc72;
 }
 
+yellowbg {
+  background-color: #ebfc72
+
+}
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
