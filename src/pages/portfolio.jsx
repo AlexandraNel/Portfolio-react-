@@ -4,9 +4,9 @@ import "../index.css";
 import IRL from '../../public/IRL'
 import techtalks from '../../public/video'
 import JATE from '../../public/JATE'
-import logoBuilder from '../../public/02mylogo.svg'
-import cossyLivs from '../../public/hero.jpg'
-import cmdReadMe from '../../public/commandlineradme.JPG'
+import logoBuilder from '/02mylogo.svg'
+import cossyLivs from '/hero.jpg'
+import cmdReadMe from '/commandlineradme.JPG'
 
 function Portfolio() {
   return (
