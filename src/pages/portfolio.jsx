@@ -17,7 +17,7 @@ function Portfolio() {
         </Col>
         <Col>
           <Project
-            img="/video.jpg"
+            img="/video.gif"
             title="Tech Talks"
             link="https://techtalks-87552bfebf03.herokuapp.com/"
             repo="https://github.com/AlexandraNel/TechTalks"
@@ -28,7 +28,7 @@ function Portfolio() {
       <Row>
         <Col>
           <Project
-            img="/JATE.jpg"
+            img="/JATE.png"
             title="JATE: Just Another Text Editor"
             link="https://just-another-text-editor-k8km.onrender.com/"
             repo="https://github.com/AlexandraNel/Just-Another-Text-Editor.git"
